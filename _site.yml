@@ -1,7 +1,7 @@
-name: "Datos a la U 2018"
+name: "Datos Abiertos"
 output_dir: "."
 navbar:
-  title: "Datos a la U 2018"
+  title: "Datos Abiertos"
   left:
     - text: "Inicio"
       href: index.html

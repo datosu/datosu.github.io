@@ -25,7 +25,6 @@ Por medio de metodologías analíticas y visualización a través de herramienta
 
   - Paola Betancur García (pbetancurg@unal.edu.co)
   - Edimer David Jaramillo (edavidja@unal.edu.co)
-  - Juan Gonzalo Morales (jgmoraleso@unal.edu.co)
   
 # Código fuente
 

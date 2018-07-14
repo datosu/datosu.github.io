@@ -3,12 +3,17 @@ title: "Calidad del Agua"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center",
+                      warning = FALSE, error = FALSE,
+                      message = FALSE)
+options(digits = 2)
 ```
 
 ```{r}
 sivicap <- read.csv("Sivicap_depur.csv", encoding = "UTF-8")
 ```
+
+# Tabla de datos
 
 ```{r}
 library(DT)
@@ -17,8 +22,40 @@ datatable(sivicap, filter = 'top', options = list(
 ))
 ```
 
+# Visualizaciones
+
 ```{r}
 library(plotly)
-plot_ly(sivicap, x = ~Año, color = ~Riesgo) %>%
-  add_histogram()
+a <- plot_ly(sivicap, x = ~Año, color = ~Riesgo) %>%
+  add_histogram() %>% layout(title = "Título")
+
+ppc <- htmltools::div(a, align="center" )
 ```
+
+```{r}
+ppc
+```
+
+# Visualizaciones 2
+
+```{r}
+library(dplyr)
+prom_depto <- sivicap %>%
+  group_by(Departamento) %>%
+  summarise(Promedio = round(mean(IRCA), digits = 2))
+
+datatable(prom_depto, filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE
+))
+```
+
+```{r}
+g <- ggplot(data = prom_depto, aes(x = Departamento, y = Promedio)) + 
+  geom_col() +
+  labs(y = "IRCA promedio",
+       title = "IRCA promedio por departamento en los años 2014-2016") +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1, vjust = 1))
+  
+ggplotly(g, width = 950, height = 600)
+```
+
