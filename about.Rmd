@@ -2,13 +2,23 @@
 title: "Calidad del Agua"
 ---
 
-# 
-
-```{r}
-plot(iris)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 ```{r}
-plot(mtcars)
+sivicap <- read.csv("Sivicap_depur.csv", encoding = "UTF-8")
 ```
 
+```{r}
+library(DT)
+datatable(sivicap, filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE
+))
+```
+
+```{r}
+library(plotly)
+plot_ly(sivicap, x = ~Año, color = ~Riesgo) %>%
+  add_histogram()
+```
