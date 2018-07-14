@@ -1,9 +1,32 @@
 ---
-title: "Inicio"
+title: "El ambiente y las enfermedades en Colombia para el período 2014 a 2016"
 ---
 
-Hello, Website!
+# Bienvenido
 
-# Título 1
+En este sitio web podrá encontrar registros de las siguientes temáticas:
 
-Bienvenidos
+  - [Calidad del agua años 2014-2016](https://www.ins.gov.co/sivicap/Paginas/sivicap.aspx)
+  - [Calidad del aire año 2014](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/INMISIONES-DATOS-DE-CONTAMINANTES-Y-CLIMATOL-GICOS/ie26-cpc9)
+  - [Calidad del aire año 2015](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/INMISIONES-DATOS-DE-CONTAMINANTES-Y-CLIMATOL-GICOS/3mty-ev99)
+  - [Calidad del aire año 2016](https://www.datos.gov.co/Ambiente-y-Desarrollo-Sostenible/INMISIONES-DATOS-DE-CONTAMINANTES-Y-CLIMATOL-GICOS/v3ny-6yj9)
+  - [Registros epidemiológicos año 2014](https://www.datos.gov.co/Salud-y-Protecci-n-Social/SIVIGILA-2014/b22h-2un2)
+  - [Registros epidemiológicos año 2015](https://www.datos.gov.co/Salud-y-Protecci-n-Social/SIVIGILA-2015/g3bv-pdab)
+  - [Registros epidemiológicos año 2016](https://www.datos.gov.co/Salud-y-Protecci-n-Social/SIVIGILA2016/ue4a-zn5u)
+  - [Datos climáticos años 2014-2016](https://www7.ncdc.noaa.gov/CDO/cdoselect.cmd?datasetabbv=GSOD&countryabbv&georegionabbv)
+
+# Objetivo
+
+Con la información obtenida a través del portal de datos abiertos del gobierno Colombiano y de otras fuentes públicas, se planteó como objetivo principal caracterizar y correlacionar los fenómenos de interés. 
+
+Por medio de metodologías analíticas y visualización a través de herramientas libres de programación, se pretende buscar patrones de comportamiento ocultos en los datos para el período 2014 a 2016.
+
+# Nosotros
+
+  - Paola Betancur García (pbetancurg@unal.edu.co)
+  - Edimer David Jaramillo (edavidja@unal.edu.co)
+  - Juan Gonzalo Morales (jgmoraleso@unal.edu.co)
+  
+# Código fuente
+
+El código fuente de la página web y todo el material que en ella está incluido, podrá ser obtenido en el [github](https://github.com/datosu/datosu.github.io).
