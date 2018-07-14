@@ -1,7 +1,7 @@
 ---
-title: "El ambiente y las enfermedades en Colombia para el período 2014 a 2016"
+title:  <h1 align="center">El ambiente y las enfermedades en Colombia para el período 2014 a 2016</h1>
 ---
-
+ 
 # Bienvenido
 
 En este sitio web podrá encontrar registros de las siguientes temáticas:
