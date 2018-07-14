@@ -8,7 +8,9 @@ navbar:
     - text: "Calidad del Agua"
       href: about.html
     - text: "Calidad del Aire"
-      href: CalidadAire.html  
+      href: CalidadAire.html
+    - text: "Registros Epidemiológicos"
+      href: prueba.html  
 output:
   html_document:
     theme: flatly
