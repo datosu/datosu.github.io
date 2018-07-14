@@ -1,0 +1,47 @@
+---
+title: "Correlaciones"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.align = "center")
+```
+
+```{r}
+library(corrplot)
+
+## corrplot 0.84 loaded
+
+M <- cor(mtcars)
+corrplot(M, method = "circle")
+
+```
+
+```{r}
+corrplot(M, method = "square")
+```
+
+```{r}
+corrplot(M, method = "ellipse")
+```
+
+```{r}
+corrplot(M, method = "number")
+```
+
+```{r}
+corrplot(M, method = "shade")
+```
+
+```{r}
+corrplot(M, method = "color")
+```
+
+```{r}
+corrplot(M, method = "pie")
+```
+
+```{r}
+corrplot.mixed(M, lower.col = "black", number.cex = .9)
+```
+

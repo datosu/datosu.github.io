@@ -10,7 +10,11 @@ navbar:
     - text: "Calidad del Aire"
       href: CalidadAire.html
     - text: "Registros Epidemiológicos"
-      href: prueba.html  
+      href: prueba.html
+    - text: "Registros Climáticos"
+      href: Clima.html
+    - text: "Correlaciones"
+      href: Correlaciones.html  
 output:
   html_document:
     theme: flatly

@@ -11,7 +11,7 @@
 
 
 
-<title>Calidad del Agua</title>
+<title>Correlaciones</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -208,16 +208,32 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Calidad del Agua</h1>
+<h1 class="title toc-ignore">Correlaciones</h1>
 
 </div>
 
 
-<p>More about this website.</p>
-<pre class="r"><code>plot(iris)</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<pre class="r"><code>plot(mtcars)</code></pre>
-<p><img src="about_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>library(corrplot)
+
+## corrplot 0.84 loaded
+
+M &lt;- cor(mtcars)
+corrplot(M, method = &quot;circle&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;square&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;ellipse&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;number&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-4-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;shade&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;color&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot(M, method = &quot;pie&quot;)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>corrplot.mixed(M, lower.col = &quot;black&quot;, number.cex = .9)</code></pre>
+<p><img src="Correlaciones_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
 
 
 
